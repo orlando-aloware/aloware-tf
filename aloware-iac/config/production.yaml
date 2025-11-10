@@ -1,0 +1,20 @@
+# Production Environment Configuration
+environment: production
+aws_account_id: "aloware"  
+aws_region: us-west-2
+
+# Module Sources (use stable tags in production)
+composite_modules:
+  networking:
+    source: "git::https://github.com/aloware/aloware-infraestructure-modules.git//composite-modules/networking?ref=v1.0.0"
+  eks_cluster:
+    source: "git::https://github.com/aloware/aloware-infraestructure-modules.git//composite-modules/eks-cluster?ref=v1.0.0"
+  database:
+    source: "git::https://github.com/aloware/aloware-infraestructure-modules.git//composite-modules/database?ref=v1.0.0"
+  storage:
+    source: "git::https://github.com/aloware/aloware-infraestructure-modules.git//composite-modules/storage?ref=v1.0.0"
+  application:
+    source: "git::https://github.com/aloware/aloware-infraestructure-modules.git//composite-modules/application?ref=v1.0.0"
+  monitoring:
+    source: "git::https://github.com/aloware/aloware-infraestructure-modules.git//composite-modules/monitoring?ref=v1.0.0"
+

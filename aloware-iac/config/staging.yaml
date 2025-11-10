@@ -1,0 +1,19 @@
+# Staging Environment Configuration
+environment: staging
+aws_account_id: "225989345843"
+aws_region: us-west-2
+
+# Module Sources
+composite_modules:
+  networking:
+    source: "git::https://github.com/aloware/aloware-infraestructure-modules.git//composite-modules/networking?ref=develop"
+  eks_cluster:
+    source: "git::https://github.com/aloware/aloware-infraestructure-modules.git//composite-modules/eks-cluster?ref=develop"
+  database:
+    source: "git::https://github.com/aloware/aloware-infraestructure-modules.git//composite-modules/database?ref=develop"
+  storage:
+    source: "git::https://github.com/aloware/aloware-infraestructure-modules.git//composite-modules/storage?ref=develop"
+  application:
+    source: "git::https://github.com/aloware/aloware-infraestructure-modules.git//composite-modules/application?ref=develop"
+  monitoring:
+    source: "git::https://github.com/aloware/aloware-infraestructure-modules.git//composite-modules/monitoring?ref=develop"
