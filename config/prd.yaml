@@ -1,5 +1,5 @@
 # Production Environment Configuration
-environment: production
+environment: prd
 aws_account_id: "aloware"  
 aws_region: us-west-2
 

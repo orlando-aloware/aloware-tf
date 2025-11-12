@@ -1,6 +1,6 @@
-# Staging Environment Configuration
-environment: staging
-aws_account_id: "225989345843"
+# Development Environment Configuration
+environment: dev
+aws_account_id: "333629833033"
 aws_region: us-west-2
 
 # Module Sources

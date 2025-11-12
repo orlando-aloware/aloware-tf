@@ -2,5 +2,5 @@
 
 locals {
   aws_account_id = "333629833033" # Development AWS Account ID
-  env            = "development"
+  env            = "dev"
 }

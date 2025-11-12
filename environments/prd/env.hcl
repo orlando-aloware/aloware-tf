@@ -2,5 +2,5 @@
 
 locals {
   aws_account_id = "aloware" # Production AWS Account ID - TO BE DETERMINED
-  env            = "production"
+  env            = "prd"
 }
